@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+
+
+import { ContactUs } from './components/Contact/section-contact-us'
 
 export default function Home() {
   return (
     <main>
-      <h1></h1>
+      <ContactUs src="images/contact-img.avif"></ContactUs>
     </main>
   )
 }
