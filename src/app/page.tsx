@@ -1,8 +1,5 @@
 
 
-
-
-
 import {CardAboutUs} from "./components/sectionAboutUs/CardAboutUs";
 
 
