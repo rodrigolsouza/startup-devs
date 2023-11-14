@@ -1,5 +1,7 @@
 
-/*import SectionAboutUs from './components/sectionAboutUs/SectionAboutUs'*/
+
+
+
 
 import {CardAboutUs} from "./components/sectionAboutUs/CardAboutUs";
 
@@ -35,7 +37,11 @@ export default function Home() {
 
   return (
     <main>
+
+
       <CardAboutUs people= {listPeople}/>
+
+
     </main>
   )
 }
