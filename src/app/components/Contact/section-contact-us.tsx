@@ -1,8 +1,17 @@
+"use client";
+
 import "./style.css";
 
 interface PropsImg {
   src: any;
 }
+
+
+
+  function Button () {
+   return <button onClick={() => alert("Mensagem enviada. Em breve entraremos em contato.")}>Click me</button>
+ }
+
 
 export function ContactUs(props: PropsImg) {
   return (
@@ -24,7 +33,7 @@ export function ContactUs(props: PropsImg) {
         </div>
         <br />
 
-        <button type="submit">Let's talk</button>
+        <Button></Button>
       </form>
 
       <div className="image-container">
