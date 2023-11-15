@@ -71,7 +71,7 @@
   grid-column: 2;
 }
 
-.image-container img {
+.image-container-home img {
   width: 444px;
   height: 603px;
   object-fit: cover;

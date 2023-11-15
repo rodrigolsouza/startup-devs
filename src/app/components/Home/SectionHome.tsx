@@ -31,7 +31,7 @@ export function SectionHome({
         </div>
       </div>
 
-      <div className="image-container">
+      <div className="image-container-home">
         <img src={imgSrc} alt="Right Image" />
       </div>
     </section>
