@@ -38,7 +38,7 @@ export function Header() {
             alert("Aqui está nosso contato!");
           }}
         >
-          Contato
+          Contact
         </button>
       </div>
     </div>
