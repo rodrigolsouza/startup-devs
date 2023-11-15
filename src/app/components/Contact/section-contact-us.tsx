@@ -6,16 +6,19 @@ interface PropsImg {
   src: any;
 }
 
-
-
-  function Button () {
-   return <button onClick={() => alert("Mensagem enviada. Em breve entraremos em contato.")}>Click me</button>
- }
-
+function Button() {
+  return (
+    <button
+      onClick={() => alert("Mensagem enviada. Em breve entraremos em contato.")}
+    >
+      Click me
+    </button>
+  );
+}
 
 export function ContactUs(props: PropsImg) {
   return (
-    <div className="grid-container">
+    <div id="Contact" className="grid-container">
       <form>
         <p className="p1">LET´S TALK</p>
         <h1>contact us</h1>
@@ -42,4 +45,3 @@ export function ContactUs(props: PropsImg) {
     </div>
   );
 }
-

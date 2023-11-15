@@ -16,7 +16,7 @@ export function Header() {
       <div className="logo">Logo</div>
       <nav className="main-navigation">
         <ul>
-          {["home", "services", "portfolio", "about", "contact"].map(
+          {["Home", "Services", "Portfolio", "About", "Contact"].map(
             (section, index) => (
               <li key={index}>
                 <a

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page-header__row {
   display: flex;
   justify-content: space-around;
