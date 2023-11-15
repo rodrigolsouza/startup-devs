@@ -70,15 +70,37 @@
   form {
     grid-column: 1;
     width: 50%;
-    padding-left: 40%;
+    padding-left: 30%;
+    margin-top: 10%;
   }
   
   .image-container {
     grid-column: 2; 
-  }
+    background-color: #ffebdc;
+    }
   
   .image-container img {
     width: 100%; 
     height: auto; 
     margin: 20% 10%;
   }
+
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .image2,
+  .image3 {
+    position: absolute;
+  }
+  
+  .image2 {
+    top: -90px; 
+    padding-left: 465px;
+  }
+  
+  .image3 {
+    bottom: -80px;
+    left: -110px;
+  }
+  

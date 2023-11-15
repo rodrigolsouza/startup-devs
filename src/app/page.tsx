@@ -1,12 +1,12 @@
-"use client";
+'use client';
 import { ContactUs } from "./components/Contact/section-contact-us";
-import { Header } from "./components/Header/Header";
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <ContactUs src="images/contact-img.avif"></ContactUs>
+      <div style={{backgroundColor: "#f3f3f3"}}>
+      <ContactUs image1="images/contact-img.avif" image2="images/contact-piramid.svg" image3="images/contact-cube.svg"></ContactUs>
+      </div>
     </main>
   );
 }
