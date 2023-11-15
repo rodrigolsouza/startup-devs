@@ -11,6 +11,10 @@ html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 
 .logo {
