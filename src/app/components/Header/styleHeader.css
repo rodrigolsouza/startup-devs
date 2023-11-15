@@ -1,0 +1,60 @@
+.page-header__row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 20px 0px;
+}
+
+.nav-link:hover {
+  color: #00bfa5;
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
+.nav-link.active {
+  color: #009d8e;
+  transform: translateY(-4px);
+}
+
+.nav-link.active:hover {
+  color: #00bfa5;
+}
+.cta-button {
+  display: flex;
+}
+
+.cta-button button {
+  padding: 10px 20px;
+  max-width: 150px;
+  white-space: nowrap;
+  margin-right: 50px;
+}
