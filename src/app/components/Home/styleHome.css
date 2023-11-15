@@ -4,8 +4,11 @@
   margin: 0;
 }
 
+
+
 .grid-container-home {
   display: grid;
+  position: relative;
   height: 544px;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
@@ -67,13 +70,55 @@
 .button-container button:hover {
   background-color: #00bfa5;
 }
-.image-container {
+.image-container-home {
   grid-column: 2;
 }
 
-.image-container-home img {
-  width: 444px;
-  height: 603px;
+.image-people {
+  width: auto;
+  height: 580px;
   object-fit: cover;
-  margin: 0px;
+  margin-right: 20px;
+ 
+}
+
+.shape {
+  grid-column: 2;
+}
+
+
+.cube-one{
+  position: absolute;
+  z-index: 100003;
+  border: 0;
+  height: 53px; 
+  width: 56px;  
+  top: 335px; 
+  left: 520px; 
+  overflow: hidden;
+  display: block;
+}
+
+.cube-two{
+  position: absolute;
+  z-index: 100003;
+  border: 0;
+  height: 46px; 
+  width: 53px;  
+  top: 50px; 
+  left: 430px; 
+  overflow: hidden;
+  display: block;
+}
+
+.pyramid{
+  position: absolute;
+  z-index: 100003;
+  border: 0;
+  height: 81px; 
+  width: 87px;  
+  top: 245px; 
+  left: 900px; 
+  overflow: hidden;
+  display: block;
 }
