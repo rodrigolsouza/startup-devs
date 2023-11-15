@@ -1,3 +1,4 @@
+"use client";
 import "./styleHeader.css";
 import React from "react";
 import { useState } from "react";
@@ -32,7 +33,13 @@ export function Header() {
         </ul>
       </nav>
       <div className="cta-button">
-        <button>Contato</button>
+        <button
+          onClick={() => {
+            alert("Aqui está nosso contato!");
+          }}
+        >
+          Contato
+        </button>
       </div>
     </div>
   );
