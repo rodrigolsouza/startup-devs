@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page-header__row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 20px 20px;
+}
+
+.nav-link:hover {
+  color: #00bfa5;
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
+.nav-link.active {
+  color: #009d8e;
+  transform: translateY(-4px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 191, 165, 0.1);
+  transition: backdrop-filter 0.2s ease, background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-link.active:hover {
+  color: #00bfa5;
+  backdrop-filter: blur(0);
+  background-color: rgba(0, 191, 165, 0);
+}
+
+.cta-button {
+  display: flex;
+}
+
+.cta-button button {
+  padding: 10px 20px;
+  max-width: 150px;
+  white-space: nowrap;
+  margin-right: 50px;
+}

@@ -1,95 +1,49 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+
+"use client";
+
+import {CardAboutUs} from "./components/sectionAboutUs/CardAboutUs";
+import { ContactUs } from "./components/Contact/section-contact-us";
+import { Header } from "./components/Header/Header";
+import { SectionHome } from "./components/Home/SectionHome";
 
 export default function Home() {
+
+  const listPeople=[
+    {
+        id: crypto.randomUUID(),
+        image:"https://avatars.githubusercontent.com/u/61033232?v=4",
+        name:"Rodrigo Souza",
+        jobTitle: "Developer",
+    },
+    {   
+        id: crypto.randomUUID(),
+        image:"https://images-ext-1.discordapp.net/external/78utGeiONFJmT5_6UTlS2Cfw8BJO5Idm6rFo_r6LsRw/%3Fe%3D1705536000%26v%3Dbeta%26t%3Dl8j7JsbbAtAtkpjo1hBDqwNCyUbIOdf03AK0Wg6rtJM/https/media.licdn.com/dms/image/D4D03AQGRXabDApjhQQ/profile-displayphoto-shrink_800_800/0/1697927837701?width=418&height=418",
+        name:"Emesson",
+        jobTitle: "Programming",
+    },
+    {
+        id: crypto.randomUUID(),
+        image:"https://avatars.githubusercontent.com/u/134212408?v=4",
+        name:"Rinaldo Vilela",
+        jobTitle: "Developer",
+    },
+    {
+        id: crypto.randomUUID(),
+        image:"https://avatars.githubusercontent.com/u/114183514?v=4",
+        name:"Nemésio",
+        jobTitle: "Programming",
+    }
+  ]
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <Header />
+      <SectionHome imgSrc="https://cdn.lugc.link/ceb0edac-1016-4630-a72a-4b5d92857a6d/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/x603/"
+        title="digital marketing agency."
+        subtitle=""
+        buttonText="Let's Talk" />
+      <CardAboutUs people= {listPeople}/>
+      <ContactUs src="images/contact-img.avif"></ContactUs>
     </main>
-  )
+  );
 }
