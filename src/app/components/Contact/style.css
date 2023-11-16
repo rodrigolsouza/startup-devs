@@ -1,7 +1,7 @@
 
 input {
   width: 100%;
-  padding: 20px;
+  padding: 18px;
   margin-top: 5px;
   border: 1px solid #009d8e;
   font-size: 12px;
@@ -70,14 +70,27 @@ h1 {
 form {
   grid-column: 1;
   width: 50%;
+  padding-left: 5%;
+  margin-top: 5%;
 }
 
 .image-container {
   grid-column: 2; 
+  background-color: #ffebdc;
 }
 
 .image-container img {
   width: 100%; 
   height: auto; 
   margin-right: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image2{
+  position: absolute;
+  bottom: -70px;
+  left: -45px;
 }

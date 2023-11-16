@@ -3,16 +3,17 @@
 import "./style.css";
 
 interface PropsImg {
-  src: any;
+  image1: any;
+  image2: any;
 }
 
 function Button() {
   return (
     <button
     className="button-alert"
-      onClick={() => alert("Mensagem enviada. Em breve entraremos em contato.")}
+      onClick={() => alert("Contact sent. Soon we will return your contact.")}
     >
-      Click me
+      Let´s Talk
     </button>
   );
 }
@@ -41,7 +42,10 @@ export function ContactUs(props: PropsImg) {
       </form>
 
       <div className="image-container">
-        <img src={props.src}></img>
+      <div className="image-wrapper">
+          <img src={props.image1} alt="Imagem" />
+          <img style={{width: 100, height: 100}} src={props.image2} alt="red cube" className="image2" />
+        </div>
       </div>
     </div>
   );

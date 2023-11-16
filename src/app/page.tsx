@@ -43,7 +43,8 @@ export default function Home() {
         subtitle=""
         buttonText="Let's Talk" />
       <CardAboutUs people= {listPeople}/>
-      <ContactUs src="images/contact-img.avif"></ContactUs>
+
+      <ContactUs image1="images/contact-img.avif" image2="images/contact-cube.svg"></ContactUs>
     </main>
   );
 }
