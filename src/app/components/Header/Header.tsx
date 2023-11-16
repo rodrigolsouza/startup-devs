@@ -34,6 +34,7 @@ export function Header() {
       </nav>
       <div className="cta-button">
         <button
+        className="button-alert"
           onClick={() => {
             alert("Aqui está nosso contato!");
           }}

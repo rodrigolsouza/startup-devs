@@ -12,18 +12,18 @@
   padding: 20px;
 }
 
-img {
+.image-avatar {
   border-radius: 50%;
   width: 166px;
   height: 166px;  
 }
 
-h2 {
+.people-name {
   color: black;
   font-size: 1em;
 }
 
-p {
+.people-job {
   color: black;
   font-size: 0.8em;
 }

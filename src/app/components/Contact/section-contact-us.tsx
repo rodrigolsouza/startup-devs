@@ -9,6 +9,7 @@ interface PropsImg {
 function Button() {
   return (
     <button
+    className="button-alert"
       onClick={() => alert("Mensagem enviada. Em breve entraremos em contato.")}
     >
       Click me

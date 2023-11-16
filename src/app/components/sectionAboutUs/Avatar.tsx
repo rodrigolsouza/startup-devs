@@ -14,9 +14,9 @@ export type PersonProps = {
 export function Avatar({people}: PersonProps) {
   return (
     <div className='box-avatar'>
-      <img src={people.image} alt={people.name} />
-      <h2>{people.name}</h2>
-      <p>{people.jobTitle}</p>
+      <img className='image-avatar' src={people.image} alt={people.name} />
+      <h2 className='people-name' >{people.name}</h2>
+      <p className='people-job'>{people.jobTitle}</p>
     </div>
   );
 };

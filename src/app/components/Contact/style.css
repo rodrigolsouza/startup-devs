@@ -17,7 +17,7 @@ label {
   font-weight: 400;
 }
 
-button {
+.button-alert {
   background-color: #009d8e;
   color: white;
   padding: 18px 5px;
@@ -29,7 +29,7 @@ button {
   font-size:100%;
 }
 
-button:hover {
+.button-alert:hover {
   background-color: #00bfa5;
 }
 
