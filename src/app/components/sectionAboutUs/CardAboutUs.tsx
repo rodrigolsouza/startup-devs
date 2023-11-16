@@ -17,10 +17,10 @@ export function CardAboutUs({ people }: ListPeopleProps) {
   const [activeButton, setActiveButton] = useState(false);
 
   const handleButtonClick = () => {
-    setActiveButton(!activeButton); 
+    setActiveButton(!activeButton);
   };
   return (
-    <div className="card-container">
+    <div id="About" className="card-container">
       <h1 className="title-about-us">ABOUT US</h1>
       <div className="list-avatar">
         {people.map((person) => (

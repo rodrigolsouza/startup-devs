@@ -4,15 +4,13 @@
   margin: 0;
 }
 
-
-
 .grid-container-home {
   display: grid;
   position: relative;
   height: 544px;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  width: 1000px; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 1000px;
   margin: auto;
   background-color: #f0f0f0;
   grid-auto-flow: column;
@@ -26,15 +24,15 @@
 
 .text-container h1 {
   color: #000000;
-    
-    font-family: "times new roman";
-    font-size: 90px;
-    font-weight: normal;
-    line-height: .8;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    left: 0px;
-    height: 216px;
+
+  font-family: "times new roman";
+  font-size: 90px;
+  font-weight: normal;
+  line-height: 0.8;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  left: 0px;
+  height: 216px;
 }
 
 .text-container .p1 {
@@ -79,46 +77,41 @@
   height: 580px;
   object-fit: cover;
   margin-right: 20px;
- 
 }
 
 .shape {
   grid-column: 2;
 }
 
-
-.cube-one{
+.cube-one {
   position: absolute;
-  z-index: 100003;
   border: 0;
-  height: 53px; 
-  width: 56px;  
-  top: 335px; 
-  left: 520px; 
+  height: 53px;
+  width: 56px;
+  top: 335px;
+  left: 520px;
   overflow: hidden;
   display: block;
 }
 
-.cube-two{
+.cube-two {
   position: absolute;
-  z-index: 100003;
   border: 0;
-  height: 46px; 
-  width: 53px;  
-  top: 50px; 
-  left: 430px; 
+  height: 46px;
+  width: 53px;
+  top: 50px;
+  left: 430px;
   overflow: hidden;
   display: block;
 }
 
-.pyramid{
+.pyramid {
   position: absolute;
-  z-index: 100003;
   border: 0;
-  height: 81px; 
-  width: 87px;  
-  top: 245px; 
-  left: 900px; 
+  height: 81px;
+  width: 87px;
+  top: 245px;
+  left: 900px;
   overflow: hidden;
   display: block;
 }
