@@ -18,7 +18,7 @@ export function ContactUs(props: PropsImg) {
       <form>
         <p className="p1">VAMOS CONVERSAR</p>
         <h1>nos contate</h1>
-        <p className="p2">Entraremos em contato com você de volta</p>
+        <p className="p2">Entraremos em contato com você de volta </p>
 
         <div className="input-group">
           <label htmlFor="name">Nome</label>
