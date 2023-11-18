@@ -5,6 +5,8 @@ import {CardAboutUs} from "./components/sectionAboutUs/CardAboutUs";
 import { ContactUs } from "./components/Contact/section-contact-us";
 import { Header } from "./components/Header/Header";
 import { SectionHome } from "./components/Home/SectionHome";
+import { Container } from "./components/sectionAboutOurRealizations/Container";
+
 
 export default function Home() {
 
@@ -42,9 +44,10 @@ export default function Home() {
         title="digital marketing agency."
         subtitle=""
         buttonText="Let's Talk" />
-      <CardAboutUs people= {listPeople}/>
-
+      <CardAboutUs people= {listPeople}/> 
+      <Container/>  
       <ContactUs image1="images/contact-img.avif" image2="images/contact-cube.svg"></ContactUs>
+      
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import Card from "./Card";
 import "./style.css";
 
-function Container() {
+export function Container() {
   return (
     <div className="main">
       <div className="container">
@@ -26,15 +26,10 @@ function Container() {
           <Card />
         </div>
         <div className="img-content">
-          <img
-            className="img"
-            src="https://cdn.lugc.link/15b2b0d0-fabc-4dcf-8db6-1b66add11964/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/x506/"
-            alt="imagem de um laptop aberto"
-          />
+          
         </div>
       </div>
     </div>
   );
 }
 
-export default Container;
